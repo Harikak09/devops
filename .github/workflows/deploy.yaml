@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
         
       - name: Build the docker image
-        run: docker image build -t hello-app:latest .
+        run: docker image build -t harikak09/hello-app:latest ./hello-app
       
       - name: Tag the docker image
         run: docker image tag hello-app:v2 harikak09/hello-app:v2
