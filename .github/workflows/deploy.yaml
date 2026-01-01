@@ -23,7 +23,7 @@ jobs:
         run: docker image build -t harikak09/hello-app:latest ./hello-app
       
       - name: Tag the docker image
-        run: docker image tag hello-app:latest harikak09/hello-app:latest
+        run: docker image tag harikak09/hello-app:latest harikak09/hello-app:latest
 
       - name: Push the docker image
         run: docker push harikak09/hello-app:latest
